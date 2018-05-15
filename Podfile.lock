@@ -1,0 +1,16 @@
+PODS:
+  - Selenium (1.3.3)
+
+DEPENDENCIES:
+  - Selenium
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Selenium
+
+SPEC CHECKSUMS:
+  Selenium: eff3fafe01424444a3b4a3a6981b7feac60518f0
+
+PODFILE CHECKSUM: 1ea38ffdb6c45dbe5a05445afa9174a537fbac48
+
+COCOAPODS: 1.5.0

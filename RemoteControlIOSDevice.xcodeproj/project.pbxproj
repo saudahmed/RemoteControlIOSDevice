@@ -1,0 +1,391 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E4C57197ABC89E969554F2B /* Pods_RemoteControlIOSDevice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E8BF0B33A796C7B51E5F79E /* Pods_RemoteControlIOSDevice.framework */; };
+		ED4A0C1420AB42FA00B43A23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4A0C1320AB42FA00B43A23 /* AppDelegate.swift */; };
+		ED4A0C1620AB42FA00B43A23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4A0C1520AB42FA00B43A23 /* ViewController.swift */; };
+		ED4A0C1820AB42FC00B43A23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED4A0C1720AB42FC00B43A23 /* Assets.xcassets */; };
+		ED4A0C1B20AB42FC00B43A23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED4A0C1920AB42FC00B43A23 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4EE73A8BE797F70F67FAB0F7 /* Pods-RemoteControlIOSDevice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteControlIOSDevice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RemoteControlIOSDevice/Pods-RemoteControlIOSDevice.debug.xcconfig"; sourceTree = "<group>"; };
+		5E8BF0B33A796C7B51E5F79E /* Pods_RemoteControlIOSDevice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemoteControlIOSDevice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93D7E1D429FF3D6F6A3B6446 /* Pods-RemoteControlIOSDevice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteControlIOSDevice.release.xcconfig"; path = "Pods/Target Support Files/Pods-RemoteControlIOSDevice/Pods-RemoteControlIOSDevice.release.xcconfig"; sourceTree = "<group>"; };
+		ED4A0C1020AB42FA00B43A23 /* RemoteControlIOSDevice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteControlIOSDevice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED4A0C1320AB42FA00B43A23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ED4A0C1520AB42FA00B43A23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ED4A0C1720AB42FC00B43A23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED4A0C1A20AB42FC00B43A23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ED4A0C1C20AB42FC00B43A23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED4A0C1D20AB42FC00B43A23 /* RemoteControlIOSDevice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RemoteControlIOSDevice.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED4A0C0D20AB42FA00B43A23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E4C57197ABC89E969554F2B /* Pods_RemoteControlIOSDevice.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15856FD8784D92859BE66F44 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4EE73A8BE797F70F67FAB0F7 /* Pods-RemoteControlIOSDevice.debug.xcconfig */,
+				93D7E1D429FF3D6F6A3B6446 /* Pods-RemoteControlIOSDevice.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		922E380D38BEDCCAFAC1613C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E8BF0B33A796C7B51E5F79E /* Pods_RemoteControlIOSDevice.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED4A0C0720AB42FA00B43A23 = {
+			isa = PBXGroup;
+			children = (
+				ED4A0C1220AB42FA00B43A23 /* RemoteControlIOSDevice */,
+				ED4A0C1120AB42FA00B43A23 /* Products */,
+				15856FD8784D92859BE66F44 /* Pods */,
+				922E380D38BEDCCAFAC1613C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ED4A0C1120AB42FA00B43A23 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED4A0C1020AB42FA00B43A23 /* RemoteControlIOSDevice.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED4A0C1220AB42FA00B43A23 /* RemoteControlIOSDevice */ = {
+			isa = PBXGroup;
+			children = (
+				ED4A0C1320AB42FA00B43A23 /* AppDelegate.swift */,
+				ED4A0C1520AB42FA00B43A23 /* ViewController.swift */,
+				ED4A0C1720AB42FC00B43A23 /* Assets.xcassets */,
+				ED4A0C1920AB42FC00B43A23 /* Main.storyboard */,
+				ED4A0C1C20AB42FC00B43A23 /* Info.plist */,
+				ED4A0C1D20AB42FC00B43A23 /* RemoteControlIOSDevice.entitlements */,
+			);
+			path = RemoteControlIOSDevice;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED4A0C0F20AB42FA00B43A23 /* RemoteControlIOSDevice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED4A0C2020AB42FC00B43A23 /* Build configuration list for PBXNativeTarget "RemoteControlIOSDevice" */;
+			buildPhases = (
+				26257A76FF2ECF7E4D947DEC /* [CP] Check Pods Manifest.lock */,
+				ED4A0C0C20AB42FA00B43A23 /* Sources */,
+				ED4A0C0D20AB42FA00B43A23 /* Frameworks */,
+				ED4A0C0E20AB42FA00B43A23 /* Resources */,
+				A3B69EB38956FF0AD6F21B36 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RemoteControlIOSDevice;
+			productName = RemoteControlIOSDevice;
+			productReference = ED4A0C1020AB42FA00B43A23 /* RemoteControlIOSDevice.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED4A0C0820AB42FA00B43A23 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = privateprojects;
+				TargetAttributes = {
+					ED4A0C0F20AB42FA00B43A23 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = ED4A0C0B20AB42FA00B43A23 /* Build configuration list for PBXProject "RemoteControlIOSDevice" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED4A0C0720AB42FA00B43A23;
+			productRefGroup = ED4A0C1120AB42FA00B43A23 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED4A0C0F20AB42FA00B43A23 /* RemoteControlIOSDevice */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED4A0C0E20AB42FA00B43A23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED4A0C1820AB42FC00B43A23 /* Assets.xcassets in Resources */,
+				ED4A0C1B20AB42FC00B43A23 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26257A76FF2ECF7E4D947DEC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RemoteControlIOSDevice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3B69EB38956FF0AD6F21B36 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RemoteControlIOSDevice/Pods-RemoteControlIOSDevice-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Selenium/Selenium.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Selenium.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RemoteControlIOSDevice/Pods-RemoteControlIOSDevice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED4A0C0C20AB42FA00B43A23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED4A0C1620AB42FA00B43A23 /* ViewController.swift in Sources */,
+				ED4A0C1420AB42FA00B43A23 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ED4A0C1920AB42FC00B43A23 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED4A0C1A20AB42FC00B43A23 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ED4A0C1E20AB42FC00B43A23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ED4A0C1F20AB42FC00B43A23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		ED4A0C2120AB42FC00B43A23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EE73A8BE797F70F67FAB0F7 /* Pods-RemoteControlIOSDevice.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RemoteControlIOSDevice/RemoteControlIOSDevice.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JUZEVVS5F8;
+				INFOPLIST_FILE = RemoteControlIOSDevice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.privateprojects.RemoteControlIOSDevice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		ED4A0C2220AB42FC00B43A23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93D7E1D429FF3D6F6A3B6446 /* Pods-RemoteControlIOSDevice.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RemoteControlIOSDevice/RemoteControlIOSDevice.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JUZEVVS5F8;
+				INFOPLIST_FILE = RemoteControlIOSDevice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.privateprojects.RemoteControlIOSDevice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED4A0C0B20AB42FA00B43A23 /* Build configuration list for PBXProject "RemoteControlIOSDevice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED4A0C1E20AB42FC00B43A23 /* Debug */,
+				ED4A0C1F20AB42FC00B43A23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED4A0C2020AB42FC00B43A23 /* Build configuration list for PBXNativeTarget "RemoteControlIOSDevice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED4A0C2120AB42FC00B43A23 /* Debug */,
+				ED4A0C2220AB42FC00B43A23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED4A0C0820AB42FA00B43A23 /* Project object */;
+}

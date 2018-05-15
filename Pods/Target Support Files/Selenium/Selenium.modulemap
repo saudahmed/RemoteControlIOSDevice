@@ -1,0 +1,6 @@
+framework module Selenium {
+  umbrella header "Selenium-umbrella.h"
+
+  export *
+  module * { export * }
+}
