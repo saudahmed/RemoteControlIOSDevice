@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "45886CC9D3E732211C565D42FDF922DB"
+               BlueprintIdentifier = "47C763CE4761DDFA7D5C7746188EF901"
                BlueprintName = "Selenium"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "Selenium.framework">

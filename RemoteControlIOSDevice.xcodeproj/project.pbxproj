@@ -12,6 +12,10 @@
 		ED4A0C1620AB42FA00B43A23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4A0C1520AB42FA00B43A23 /* ViewController.swift */; };
 		ED4A0C1820AB42FC00B43A23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED4A0C1720AB42FC00B43A23 /* Assets.xcassets */; };
 		ED4A0C1B20AB42FC00B43A23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED4A0C1920AB42FC00B43A23 /* Main.storyboard */; };
+		ED960D6D20ADBB120095F9C3 /* RemoteControlModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED960D6C20ADBB120095F9C3 /* RemoteControlModel.swift */; };
+		ED960D6F20ADBED60095F9C3 /* RemoteControlIOSModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED960D6E20ADBED60095F9C3 /* RemoteControlIOSModel.swift */; };
+		ED960D7120ADC6820095F9C3 /* ServerArgument.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED960D7020ADC6820095F9C3 /* ServerArgument.swift */; };
+		ED960D7320ADD8350095F9C3 /* defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED960D7220ADD8350095F9C3 /* defaults.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,10 @@
 		ED4A0C1A20AB42FC00B43A23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED4A0C1C20AB42FC00B43A23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED4A0C1D20AB42FC00B43A23 /* RemoteControlIOSDevice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RemoteControlIOSDevice.entitlements; sourceTree = "<group>"; };
+		ED960D6C20ADBB120095F9C3 /* RemoteControlModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteControlModel.swift; sourceTree = "<group>"; };
+		ED960D6E20ADBED60095F9C3 /* RemoteControlIOSModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteControlIOSModel.swift; sourceTree = "<group>"; };
+		ED960D7020ADC6820095F9C3 /* ServerArgument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerArgument.swift; sourceTree = "<group>"; };
+		ED960D7220ADD8350095F9C3 /* defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = defaults.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,14 +85,26 @@
 		ED4A0C1220AB42FA00B43A23 /* RemoteControlIOSDevice */ = {
 			isa = PBXGroup;
 			children = (
+				ED960D7220ADD8350095F9C3 /* defaults.plist */,
 				ED4A0C1320AB42FA00B43A23 /* AppDelegate.swift */,
 				ED4A0C1520AB42FA00B43A23 /* ViewController.swift */,
 				ED4A0C1720AB42FC00B43A23 /* Assets.xcassets */,
 				ED4A0C1920AB42FC00B43A23 /* Main.storyboard */,
 				ED4A0C1C20AB42FC00B43A23 /* Info.plist */,
 				ED4A0C1D20AB42FC00B43A23 /* RemoteControlIOSDevice.entitlements */,
+				ED960D7520ADDB8B0095F9C3 /* Model */,
 			);
 			path = RemoteControlIOSDevice;
+			sourceTree = "<group>";
+		};
+		ED960D7520ADDB8B0095F9C3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ED960D6C20ADBB120095F9C3 /* RemoteControlModel.swift */,
+				ED960D6E20ADBED60095F9C3 /* RemoteControlIOSModel.swift */,
+				ED960D7020ADC6820095F9C3 /* ServerArgument.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED4A0C1820AB42FC00B43A23 /* Assets.xcassets in Resources */,
+				ED960D7320ADD8350095F9C3 /* defaults.plist in Resources */,
 				ED4A0C1B20AB42FC00B43A23 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,10 +202,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RemoteControlIOSDevice/Pods-RemoteControlIOSDevice-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Selenium/Selenium.framework",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Selenium.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -198,8 +223,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED960D6D20ADBB120095F9C3 /* RemoteControlModel.swift in Sources */,
+				ED960D7120ADC6820095F9C3 /* ServerArgument.swift in Sources */,
 				ED4A0C1620AB42FA00B43A23 /* ViewController.swift in Sources */,
 				ED4A0C1420AB42FA00B43A23 /* AppDelegate.swift in Sources */,
+				ED960D6F20ADBED60095F9C3 /* RemoteControlIOSModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,9 +368,13 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = JUZEVVS5F8;
 				INFOPLIST_FILE = RemoteControlIOSDevice/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.privateprojects.RemoteControlIOSDevice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -357,9 +389,13 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = JUZEVVS5F8;
 				INFOPLIST_FILE = RemoteControlIOSDevice/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.privateprojects.RemoteControlIOSDevice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;

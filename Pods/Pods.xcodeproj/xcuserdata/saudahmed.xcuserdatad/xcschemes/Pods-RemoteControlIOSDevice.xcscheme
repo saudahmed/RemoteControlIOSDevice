@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "19D75F12B8A2F423AB90B1FB0626E57F"
+               BlueprintIdentifier = "0930E3641DF7A53D8C6E9595340FD1BA"
                BuildableName = "Pods_RemoteControlIOSDevice.framework"
                BlueprintName = "Pods-RemoteControlIOSDevice"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "19D75F12B8A2F423AB90B1FB0626E57F"
+            BlueprintIdentifier = "0930E3641DF7A53D8C6E9595340FD1BA"
             BuildableName = "Pods_RemoteControlIOSDevice.framework"
             BlueprintName = "Pods-RemoteControlIOSDevice"
             ReferencedContainer = "container:Pods.xcodeproj">

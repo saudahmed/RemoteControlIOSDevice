@@ -7,12 +7,16 @@
 //
 
 import Cocoa
+import SocketIO
 
 class ViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        var model = RemoteControlModel()
+        model.startServer()
+        
         // Do any additional setup after loading the view.
     }
 
