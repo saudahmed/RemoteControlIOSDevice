@@ -9,13 +9,25 @@
 /* Begin PBXBuildFile section */
 		3E4C57197ABC89E969554F2B /* Pods_RemoteControlIOSDevice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E8BF0B33A796C7B51E5F79E /* Pods_RemoteControlIOSDevice.framework */; };
 		ED4A0C1420AB42FA00B43A23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4A0C1320AB42FA00B43A23 /* AppDelegate.swift */; };
-		ED4A0C1620AB42FA00B43A23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4A0C1520AB42FA00B43A23 /* ViewController.swift */; };
+		ED4A0C1620AB42FA00B43A23 /* RemoteControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4A0C1520AB42FA00B43A23 /* RemoteControlViewController.swift */; };
 		ED4A0C1820AB42FC00B43A23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED4A0C1720AB42FC00B43A23 /* Assets.xcassets */; };
 		ED4A0C1B20AB42FC00B43A23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED4A0C1920AB42FC00B43A23 /* Main.storyboard */; };
 		ED960D6D20ADBB120095F9C3 /* RemoteControlModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED960D6C20ADBB120095F9C3 /* RemoteControlModel.swift */; };
 		ED960D6F20ADBED60095F9C3 /* RemoteControlIOSModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED960D6E20ADBED60095F9C3 /* RemoteControlIOSModel.swift */; };
 		ED960D7120ADC6820095F9C3 /* ServerArgument.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED960D7020ADC6820095F9C3 /* ServerArgument.swift */; };
 		ED960D7320ADD8350095F9C3 /* defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED960D7220ADD8350095F9C3 /* defaults.plist */; };
+		ED960D7820AF24200095F9C3 /* ScreenShotImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED960D7720AF24200095F9C3 /* ScreenShotImageView.swift */; };
+		ED960D7B20AF3F2C0095F9C3 /* RemoteControlViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED960D7A20AF3F2C0095F9C3 /* RemoteControlViewModel.swift */; };
+		ED960D8B20AF7C4B0095F9C3 /* NSImage+Rotated.m in Sources */ = {isa = PBXBuildFile; fileRef = ED960D7F20AF7C4B0095F9C3 /* NSImage+Rotated.m */; };
+		ED960D8C20AF7C4B0095F9C3 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = ED960D8220AF7C4B0095F9C3 /* Utility.m */; };
+		ED960D8E20AF7C4B0095F9C3 /* NodeInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = ED960D8520AF7C4B0095F9C3 /* NodeInstance.m */; };
+		ED960D8F20AF7C4B0095F9C3 /* NSObject+Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = ED960D8620AF7C4B0095F9C3 /* NSObject+Properties.m */; };
+		ED960D9020AF7C4B0095F9C3 /* NSString+TrimLeadingWhitespace.m in Sources */ = {isa = PBXBuildFile; fileRef = ED960D8720AF7C4B0095F9C3 /* NSString+TrimLeadingWhitespace.m */; };
+		ED960D9120AF7C4B0095F9C3 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = ED960D8A20AF7C4B0095F9C3 /* XMLReader.m */; };
+		ED960D9920AF83340095F9C3 /* WebDriverElementNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED960D9820AF83340095F9C3 /* WebDriverElementNode.swift */; };
+		ED960D9B20AF91620095F9C3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED960D9A20AF91620095F9C3 /* QuartzCore.framework */; };
+		ED960D9D20AF916F0095F9C3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED960D9C20AF916F0095F9C3 /* Security.framework */; };
+		ED960D9F20AF917A0095F9C3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED960D9E20AF917A0095F9C3 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +36,7 @@
 		93D7E1D429FF3D6F6A3B6446 /* Pods-RemoteControlIOSDevice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteControlIOSDevice.release.xcconfig"; path = "Pods/Target Support Files/Pods-RemoteControlIOSDevice/Pods-RemoteControlIOSDevice.release.xcconfig"; sourceTree = "<group>"; };
 		ED4A0C1020AB42FA00B43A23 /* RemoteControlIOSDevice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteControlIOSDevice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED4A0C1320AB42FA00B43A23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ED4A0C1520AB42FA00B43A23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ED4A0C1520AB42FA00B43A23 /* RemoteControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteControlViewController.swift; sourceTree = "<group>"; };
 		ED4A0C1720AB42FC00B43A23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED4A0C1A20AB42FC00B43A23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED4A0C1C20AB42FC00B43A23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -33,6 +45,25 @@
 		ED960D6E20ADBED60095F9C3 /* RemoteControlIOSModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteControlIOSModel.swift; sourceTree = "<group>"; };
 		ED960D7020ADC6820095F9C3 /* ServerArgument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerArgument.swift; sourceTree = "<group>"; };
 		ED960D7220ADD8350095F9C3 /* defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = defaults.plist; sourceTree = "<group>"; };
+		ED960D7620AF01040095F9C3 /* RemoteControlIOSDevice-Bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RemoteControlIOSDevice-Bridging-header.h"; sourceTree = "<group>"; };
+		ED960D7720AF24200095F9C3 /* ScreenShotImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenShotImageView.swift; sourceTree = "<group>"; };
+		ED960D7A20AF3F2C0095F9C3 /* RemoteControlViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteControlViewModel.swift; sourceTree = "<group>"; };
+		ED960D7D20AF7C4B0095F9C3 /* NodeInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeInstance.h; sourceTree = "<group>"; };
+		ED960D7F20AF7C4B0095F9C3 /* NSImage+Rotated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+Rotated.m"; sourceTree = "<group>"; };
+		ED960D8020AF7C4B0095F9C3 /* NSString+trimLeadingWhitespace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+trimLeadingWhitespace.h"; sourceTree = "<group>"; };
+		ED960D8120AF7C4B0095F9C3 /* NSObject+Properties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Properties.h"; sourceTree = "<group>"; };
+		ED960D8220AF7C4B0095F9C3 /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
+		ED960D8320AF7C4B0095F9C3 /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
+		ED960D8520AF7C4B0095F9C3 /* NodeInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodeInstance.m; sourceTree = "<group>"; };
+		ED960D8620AF7C4B0095F9C3 /* NSObject+Properties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Properties.m"; sourceTree = "<group>"; };
+		ED960D8720AF7C4B0095F9C3 /* NSString+TrimLeadingWhitespace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TrimLeadingWhitespace.m"; sourceTree = "<group>"; };
+		ED960D8820AF7C4B0095F9C3 /* NSImage+Rotated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+Rotated.h"; sourceTree = "<group>"; };
+		ED960D8920AF7C4B0095F9C3 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		ED960D8A20AF7C4B0095F9C3 /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
+		ED960D9820AF83340095F9C3 /* WebDriverElementNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebDriverElementNode.swift; sourceTree = "<group>"; };
+		ED960D9A20AF91620095F9C3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		ED960D9C20AF916F0095F9C3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		ED960D9E20AF917A0095F9C3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +71,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED960D9F20AF917A0095F9C3 /* Cocoa.framework in Frameworks */,
+				ED960D9D20AF916F0095F9C3 /* Security.framework in Frameworks */,
+				ED960D9B20AF91620095F9C3 /* QuartzCore.framework in Frameworks */,
 				3E4C57197ABC89E969554F2B /* Pods_RemoteControlIOSDevice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,6 +93,9 @@
 		922E380D38BEDCCAFAC1613C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ED960D9E20AF917A0095F9C3 /* Cocoa.framework */,
+				ED960D9C20AF916F0095F9C3 /* Security.framework */,
+				ED960D9A20AF91620095F9C3 /* QuartzCore.framework */,
 				5E8BF0B33A796C7B51E5F79E /* Pods_RemoteControlIOSDevice.framework */,
 			);
 			name = Frameworks;
@@ -85,14 +122,14 @@
 		ED4A0C1220AB42FA00B43A23 /* RemoteControlIOSDevice */ = {
 			isa = PBXGroup;
 			children = (
-				ED960D7220ADD8350095F9C3 /* defaults.plist */,
-				ED4A0C1320AB42FA00B43A23 /* AppDelegate.swift */,
-				ED4A0C1520AB42FA00B43A23 /* ViewController.swift */,
-				ED4A0C1720AB42FC00B43A23 /* Assets.xcassets */,
-				ED4A0C1920AB42FC00B43A23 /* Main.storyboard */,
 				ED4A0C1C20AB42FC00B43A23 /* Info.plist */,
-				ED4A0C1D20AB42FC00B43A23 /* RemoteControlIOSDevice.entitlements */,
+				ED960D7C20AF7C4B0095F9C3 /* Utility */,
+				ED960D9420AF7CB60095F9C3 /* SupportingFiles */,
+				ED4A0C1920AB42FC00B43A23 /* Main.storyboard */,
 				ED960D7520ADDB8B0095F9C3 /* Model */,
+				ED960D7920AF24280095F9C3 /* View */,
+				ED960D9220AF7C5E0095F9C3 /* ViewModel */,
+				ED960D7620AF01040095F9C3 /* RemoteControlIOSDevice-Bridging-header.h */,
 			);
 			path = RemoteControlIOSDevice;
 			sourceTree = "<group>";
@@ -103,8 +140,56 @@
 				ED960D6C20ADBB120095F9C3 /* RemoteControlModel.swift */,
 				ED960D6E20ADBED60095F9C3 /* RemoteControlIOSModel.swift */,
 				ED960D7020ADC6820095F9C3 /* ServerArgument.swift */,
+				ED960D9820AF83340095F9C3 /* WebDriverElementNode.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		ED960D7920AF24280095F9C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED4A0C1520AB42FA00B43A23 /* RemoteControlViewController.swift */,
+				ED960D7720AF24200095F9C3 /* ScreenShotImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ED960D7C20AF7C4B0095F9C3 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				ED960D7D20AF7C4B0095F9C3 /* NodeInstance.h */,
+				ED960D7F20AF7C4B0095F9C3 /* NSImage+Rotated.m */,
+				ED960D8020AF7C4B0095F9C3 /* NSString+trimLeadingWhitespace.h */,
+				ED960D8120AF7C4B0095F9C3 /* NSObject+Properties.h */,
+				ED960D8220AF7C4B0095F9C3 /* Utility.m */,
+				ED960D8320AF7C4B0095F9C3 /* XMLReader.h */,
+				ED960D8520AF7C4B0095F9C3 /* NodeInstance.m */,
+				ED960D8620AF7C4B0095F9C3 /* NSObject+Properties.m */,
+				ED960D8720AF7C4B0095F9C3 /* NSString+TrimLeadingWhitespace.m */,
+				ED960D8820AF7C4B0095F9C3 /* NSImage+Rotated.h */,
+				ED960D8920AF7C4B0095F9C3 /* Utility.h */,
+				ED960D8A20AF7C4B0095F9C3 /* XMLReader.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		ED960D9220AF7C5E0095F9C3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ED960D7A20AF3F2C0095F9C3 /* RemoteControlViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ED960D9420AF7CB60095F9C3 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				ED960D7220ADD8350095F9C3 /* defaults.plist */,
+				ED4A0C1320AB42FA00B43A23 /* AppDelegate.swift */,
+				ED4A0C1720AB42FC00B43A23 /* Assets.xcassets */,
+				ED4A0C1D20AB42FC00B43A23 /* RemoteControlIOSDevice.entitlements */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,10 +308,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED960D7820AF24200095F9C3 /* ScreenShotImageView.swift in Sources */,
 				ED960D6D20ADBB120095F9C3 /* RemoteControlModel.swift in Sources */,
+				ED960D9020AF7C4B0095F9C3 /* NSString+TrimLeadingWhitespace.m in Sources */,
 				ED960D7120ADC6820095F9C3 /* ServerArgument.swift in Sources */,
-				ED4A0C1620AB42FA00B43A23 /* ViewController.swift in Sources */,
+				ED4A0C1620AB42FA00B43A23 /* RemoteControlViewController.swift in Sources */,
+				ED960D8C20AF7C4B0095F9C3 /* Utility.m in Sources */,
+				ED960D9920AF83340095F9C3 /* WebDriverElementNode.swift in Sources */,
+				ED960D9120AF7C4B0095F9C3 /* XMLReader.m in Sources */,
 				ED4A0C1420AB42FA00B43A23 /* AppDelegate.swift in Sources */,
+				ED960D7B20AF3F2C0095F9C3 /* RemoteControlViewModel.swift in Sources */,
+				ED960D8F20AF7C4B0095F9C3 /* NSObject+Properties.m in Sources */,
+				ED960D8E20AF7C4B0095F9C3 /* NodeInstance.m in Sources */,
+				ED960D8B20AF7C4B0095F9C3 /* NSImage+Rotated.m in Sources */,
 				ED960D6F20ADBED60095F9C3 /* RemoteControlIOSModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,7 +468,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.privateprojects.RemoteControlIOSDevice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "RemoteControlIOSDevice/RemoteControlIOSDevice-Bridging-header.h";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -395,7 +489,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.privateprojects.RemoteControlIOSDevice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "RemoteControlIOSDevice/RemoteControlIOSDevice-Bridging-header.h";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;

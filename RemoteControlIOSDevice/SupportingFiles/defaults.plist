@@ -143,7 +143,7 @@
 	<key>Inspector Uses XPath Only</key>
 	<false/>
 	<key>iOS App Path</key>
-	<string></string>
+	<string>/Users/saudahmed/Desktop/Zizzle/IntegrationApp.app</string>
 	<key>iOS Authorized</key>
 	<false/>
 	<key>iOS Backend Retries</key>
@@ -177,7 +177,7 @@
 	<key>iOS Orientation</key>
 	<string></string>
 	<key>iOS Platform Version</key>
-	<string>8.1</string>
+	<string>11.1.2</string>
 	<key>iOS Show Simulator Log</key>
 	<true/>
 	<key>iOS Show System Log</key>
@@ -185,7 +185,7 @@
 	<key>iOS Trace Directory</key>
 	<string></string>
 	<key>iOS UDID</key>
-	<string></string>
+	<string>5be4be2eae555016cc5ec8113c84fba80ec3d7e4</string>
 	<key>iOS Use App Path</key>
 	<false/>
 	<key>iOS Use Backend Retries</key>

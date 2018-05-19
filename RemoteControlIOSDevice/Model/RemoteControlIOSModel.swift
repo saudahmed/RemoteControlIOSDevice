@@ -14,6 +14,8 @@ enum UserDefaultKeys : String
     case appPath = "iOS App Path"
     case udid = "iOS UDID"
     case deviceName = "iOS Device Name"
+    case serverAddress = "Server Address"
+    case serverPort = "Server Port"
 }
 
 struct RemoteControlIOSModel
@@ -32,5 +34,17 @@ struct RemoteControlIOSModel
     
     func deviceName()-> String{
         return UserDefaults.standard.string(forKey: UserDefaultKeys.deviceName.rawValue)!
+    }
+    
+    func serverAddress()-> String{
+        return UserDefaults.standard.string(forKey: UserDefaultKeys.serverAddress.rawValue)!
+    }
+    
+    func serverPort()-> NSNumber{
+        return NSNumber(value: Int(UserDefaults.standard.string(forKey: UserDefaultKeys.serverPort.rawValue)!)!)
+    }
+    
+    func platformName()-> String{
+        return "iOS"
     }
 }

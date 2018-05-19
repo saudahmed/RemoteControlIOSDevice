@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -673,7 +674,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="RemoteControlIOSDevice" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -686,9 +687,9 @@
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="contentRect" x="609" y="358" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
-			<connections>
+                        <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
                         </connections>
                     </window>
@@ -700,18 +701,66 @@
             </objects>
             <point key="canvasLocation" x="75" y="250"/>
         </scene>
-        <!--View Controller-->
+        <!--Remote Control View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="RemoteControlViewController" customModule="RemoteControlIOSDevice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="790" height="480"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QfA-KW-aHm">
+                                <rect key="frame" x="174" y="223" width="87" height="32"/>
+                                <buttonCell key="cell" type="push" title="Refresh" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="5BJ-pw-hwK">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="refresh:" target="XfG-lQ-9wD" id="SNd-Eq-foY"/>
+                                </connections>
+                            </button>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="ImG-aW-v69" userLabel="Screenshot Area View">
+                                <rect key="frame" x="430" y="0.0" width="360" height="480"/>
+                                <subviews>
+                                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aeZ-bw-PCV" userLabel="Screenshot Image View" customClass="ScreenShotImageView" customModule="RemoteControlIOSDevice" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="360" height="480"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="360" id="7o9-zD-QQ6"/>
+                                            <constraint firstAttribute="height" constant="480" id="c4L-8L-sUw"/>
+                                        </constraints>
+                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="NAj-kH-dPF"/>
+                                    </imageView>
+                                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uoh-L2-OLi" userLabel="Highlight View">
+                                        <rect key="frame" x="72" y="144" width="217" height="193"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </customView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="480" id="ANc-pn-Yja"/>
+                                    <constraint firstAttribute="bottom" secondItem="aeZ-bw-PCV" secondAttribute="bottom" id="DiG-wi-fNg"/>
+                                    <constraint firstItem="aeZ-bw-PCV" firstAttribute="top" secondItem="ImG-aW-v69" secondAttribute="top" id="Rmg-La-7M5"/>
+                                    <constraint firstAttribute="trailing" secondItem="aeZ-bw-PCV" secondAttribute="trailing" id="kdM-Uh-DYU"/>
+                                    <constraint firstAttribute="width" constant="360" id="viF-v9-gGU"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="QfA-KW-aHm" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="180" id="4HA-Uh-C36"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="QfA-KW-aHm" secondAttribute="trailing" constant="20" symbolic="YES" id="UNQ-4q-te4"/>
+                            <constraint firstAttribute="bottom" secondItem="ImG-aW-v69" secondAttribute="bottom" id="ZxL-x1-cka"/>
+                            <constraint firstAttribute="trailing" secondItem="ImG-aW-v69" secondAttribute="trailing" id="qdN-sQ-jd3"/>
+                            <constraint firstItem="QfA-KW-aHm" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="sBh-GJ-36I"/>
+                            <constraint firstItem="ImG-aW-v69" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="v2y-qS-kzK"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="screenShotImageView" destination="aeZ-bw-PCV" id="0cf-Gp-E3B"/>
+                        <outlet property="screenshotImageView" destination="aeZ-bw-PCV" id="rAP-Yf-BzI"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="353" y="787"/>
         </scene>
     </scenes>
 </document>
