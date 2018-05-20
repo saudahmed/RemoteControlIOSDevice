@@ -18,8 +18,28 @@ enum UserDefaultKeys : String
     case serverPort = "Server Port"
 }
 
+enum AppiumPlatform
+{
+    case AppiumiOSPlatform
+    case AppiumAndroidPlatform
+}
+
 struct RemoteControlIOSModel
 {
+    static let sharedInstance = RemoteControlIOSModel()
+    
+    private init() {
+        
+        // initialize settings
+        if let filePath = Bundle.main.path(forResource: "defaults", ofType: "plist")
+        {
+            if let settingsDict = NSDictionary(contentsOfFile: filePath) as? [String : Any]
+            {
+                UserDefaults.standard.register(defaults: settingsDict)
+            }
+        }
+    }
+    
     func platformVersion()-> String{
         return UserDefaults.standard.string(forKey: UserDefaultKeys.platformVersion.rawValue)!
     }

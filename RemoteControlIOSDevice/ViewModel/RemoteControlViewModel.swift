@@ -10,7 +10,7 @@ import Foundation
 
 class RemoteControlViewModel
 {
-    var model = RemoteControlModel.sharedInstance
+    var model = RemoteControlIOSModel.sharedInstance
     var driver : SERemoteWebDriver!
     
     var lastPageSource : String
@@ -29,13 +29,13 @@ class RemoteControlViewModel
         orientation = SELENIUM_SCREEN_ORIENTATION_PORTRAIT
     }
     
-    func connectToAppiumServer(errorHandler: @escaping (String) -> Void)
+    func connectToAppiumServer(completionHandler: () -> Void, errorHandler: @escaping (String) -> Void)
     {
-        driver = SERemoteWebDriver(serverAddress: model.iOSModel?.serverAddress(), port: model.iOSModel?.serverPort() as! Int)
+        driver = SERemoteWebDriver(serverAddress: model.serverAddress(), port: model.serverPort() as! Int)
         
         if driver == nil
         {
-            errorHandler("Could not connect to Appium Server")
+            errorHandler("Make Sure Appium server is running")
         }
         
         let sessions = self.driver.allSessions
@@ -66,13 +66,21 @@ class RemoteControlViewModel
             let capabilities = SECapabilities()
             
             capabilities.addCapability(forKey: "automationName", andValue: "Appium")
-            capabilities.addCapability(forKey: "platformName", andValue: model.iOSModel?.platformName())
-            capabilities.addCapability(forKey: "platformVersion", andValue: model.iOSModel?.platformVersion())
-            capabilities.addCapability(forKey: "deviceName", andValue: model.iOSModel?.deviceName());
-            capabilities.addCapability(forKey: "app", andValue: model.iOSModel?.appPath())
-            capabilities.addCapability(forKey: "udid", andValue:model.iOSModel?.udid());
+            capabilities.addCapability(forKey: "platformName", andValue: model.platformName())
+            capabilities.addCapability(forKey: "platformVersion", andValue: model.platformVersion())
+            capabilities.addCapability(forKey: "deviceName", andValue: model.deviceName());
+            capabilities.addCapability(forKey: "app", andValue: model.appPath())
+            capabilities.addCapability(forKey: "udid", andValue:model.udid());
             
-            self.driver.startSession(withDesiredCapabilities: capabilities, requiredCapabilities: nil)
+            do{
+                try self.driver.startSession(withDesiredCapabilities: capabilities, requiredCapabilities: nil, error: ())
+                
+                completionHandler()
+            }
+            catch let error as NSError
+            {
+                errorHandler(error.localizedDescription);
+            }
         }
     }
     

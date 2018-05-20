@@ -711,7 +711,7 @@
                         <subviews>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QfA-KW-aHm">
                                 <rect key="frame" x="174" y="223" width="87" height="32"/>
-                                <buttonCell key="cell" type="push" title="Refresh" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="5BJ-pw-hwK">
+                                <buttonCell key="cell" type="push" title="Refresh" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="5BJ-pw-hwK">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -743,17 +743,33 @@
                                     <constraint firstAttribute="width" constant="360" id="viF-v9-gGU"/>
                                 </constraints>
                             </customView>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="itT-Cf-uPE">
+                                <rect key="frame" x="118" y="263" width="200" height="32"/>
+                                <buttonCell key="cell" type="push" title="Connect to Appium Server" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="LjW-fJ-LUd">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="connectToAppiumServer:" target="XfG-lQ-9wD" id="8cr-9F-ANU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="QfA-KW-aHm" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="180" id="4HA-Uh-C36"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="QfA-KW-aHm" secondAttribute="trailing" constant="20" symbolic="YES" id="UNQ-4q-te4"/>
+                            <constraint firstItem="ImG-aW-v69" firstAttribute="leading" secondItem="QfA-KW-aHm" secondAttribute="trailing" constant="175" id="AO9-SC-fIz"/>
+                            <constraint firstItem="QfA-KW-aHm" firstAttribute="top" secondItem="itT-Cf-uPE" secondAttribute="bottom" constant="19" id="BHv-Ax-H2e"/>
+                            <constraint firstItem="ImG-aW-v69" firstAttribute="leading" secondItem="itT-Cf-uPE" secondAttribute="trailing" constant="118" id="UhG-RM-SnS"/>
                             <constraint firstAttribute="bottom" secondItem="ImG-aW-v69" secondAttribute="bottom" id="ZxL-x1-cka"/>
+                            <constraint firstItem="itT-Cf-uPE" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="189" id="a6w-Ua-06M"/>
+                            <constraint firstItem="itT-Cf-uPE" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="124" id="k5M-Ry-iHd"/>
                             <constraint firstAttribute="trailing" secondItem="ImG-aW-v69" secondAttribute="trailing" id="qdN-sQ-jd3"/>
                             <constraint firstItem="QfA-KW-aHm" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="sBh-GJ-36I"/>
                             <constraint firstItem="ImG-aW-v69" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="v2y-qS-kzK"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="connectButton" destination="itT-Cf-uPE" id="PjQ-Z6-TwJ"/>
+                        <outlet property="refreshButton" destination="QfA-KW-aHm" id="oda-Kc-ket"/>
                         <outlet property="screenShotImageView" destination="aeZ-bw-PCV" id="0cf-Gp-E3B"/>
                         <outlet property="screenshotImageView" destination="aeZ-bw-PCV" id="rAP-Yf-BzI"/>
                         <outlet property="selectedElementHighlightView" destination="Uoh-L2-OLi" id="2V2-Tl-0AY"/>

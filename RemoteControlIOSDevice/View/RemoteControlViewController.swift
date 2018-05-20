@@ -20,18 +20,15 @@ class RemoteControlViewController: NSViewController {
     
     @IBOutlet weak var selectedElementHighlightView: NSView!
     
+    @IBOutlet weak var refreshButton: NSButton!
+    @IBOutlet weak var connectButton: NSButton!
+    
     var viewModel : RemoteControlViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         viewModel = RemoteControlViewModel(withViewController: self)
-        
-        viewModel.connectToAppiumServer(){ (text) in
-            self.showError(text: text)
-        }
-        
-        //viewModel.populateDOM()
     }
     
     override var representedObject: Any? {
@@ -43,6 +40,20 @@ class RemoteControlViewController: NSViewController {
     @IBAction func refresh(_ sender: NSButton) {
         DispatchQueue.global(qos: .background).async { [weak self] in
             self?.viewModel.populateDOM()
+        }
+    }
+    
+    @IBAction func connectToAppiumServer(_ sender: NSButton) {
+        viewModel.connectToAppiumServer(completionHandler:
+            {
+            connectButton.isEnabled = false
+            refreshButton.isEnabled = true
+            
+            self.refresh(NSButton())
+        }){ [weak self] (text) in
+            self?.showError(text: text)
+            self?.connectButton.isEnabled = true
+            self?.refreshButton.isEnabled = false
         }
     }
     

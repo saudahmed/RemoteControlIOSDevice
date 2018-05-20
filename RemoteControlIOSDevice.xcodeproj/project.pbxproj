@@ -12,7 +12,6 @@
 		ED4A0C1620AB42FA00B43A23 /* RemoteControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4A0C1520AB42FA00B43A23 /* RemoteControlViewController.swift */; };
 		ED4A0C1820AB42FC00B43A23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED4A0C1720AB42FC00B43A23 /* Assets.xcassets */; };
 		ED4A0C1B20AB42FC00B43A23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED4A0C1920AB42FC00B43A23 /* Main.storyboard */; };
-		ED960D6D20ADBB120095F9C3 /* RemoteControlModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED960D6C20ADBB120095F9C3 /* RemoteControlModel.swift */; };
 		ED960D6F20ADBED60095F9C3 /* RemoteControlIOSModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED960D6E20ADBED60095F9C3 /* RemoteControlIOSModel.swift */; };
 		ED960D7320ADD8350095F9C3 /* defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED960D7220ADD8350095F9C3 /* defaults.plist */; };
 		ED960D7820AF24200095F9C3 /* ScreenShotImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED960D7720AF24200095F9C3 /* ScreenShotImageView.swift */; };
@@ -42,7 +41,6 @@
 		ED4A0C1A20AB42FC00B43A23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED4A0C1C20AB42FC00B43A23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED4A0C1D20AB42FC00B43A23 /* RemoteControlIOSDevice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RemoteControlIOSDevice.entitlements; sourceTree = "<group>"; };
-		ED960D6C20ADBB120095F9C3 /* RemoteControlModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteControlModel.swift; sourceTree = "<group>"; };
 		ED960D6E20ADBED60095F9C3 /* RemoteControlIOSModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteControlIOSModel.swift; sourceTree = "<group>"; };
 		ED960D7220ADD8350095F9C3 /* defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = defaults.plist; sourceTree = "<group>"; };
 		ED960D7620AF01040095F9C3 /* RemoteControlIOSDevice-Bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RemoteControlIOSDevice-Bridging-header.h"; sourceTree = "<group>"; };
@@ -139,7 +137,6 @@
 		ED960D7520ADDB8B0095F9C3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				ED960D6C20ADBB120095F9C3 /* RemoteControlModel.swift */,
 				ED960D6E20ADBED60095F9C3 /* RemoteControlIOSModel.swift */,
 				ED960D9820AF83340095F9C3 /* WebDriverElementNode.swift */,
 				ED960DA220B09E560095F9C3 /* AppiumCodeMakerLocator.swift */,
@@ -312,7 +309,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED960D7820AF24200095F9C3 /* ScreenShotImageView.swift in Sources */,
-				ED960D6D20ADBB120095F9C3 /* RemoteControlModel.swift in Sources */,
 				ED960D9020AF7C4B0095F9C3 /* NSString+TrimLeadingWhitespace.m in Sources */,
 				ED4A0C1620AB42FA00B43A23 /* RemoteControlViewController.swift in Sources */,
 				ED960D8C20AF7C4B0095F9C3 /* Utility.m in Sources */,
