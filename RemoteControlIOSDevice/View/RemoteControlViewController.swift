@@ -18,6 +18,8 @@ class RemoteControlViewController: NSViewController {
         }
     }
     
+    @IBOutlet weak var selectedElementHighlightView: NSView!
+    
     var viewModel : RemoteControlViewModel!
     
     override func viewDidLoad() {
@@ -39,7 +41,9 @@ class RemoteControlViewController: NSViewController {
     }
     
     @IBAction func refresh(_ sender: NSButton) {
-        viewModel.populateDOM()
+        DispatchQueue.global(qos: .background).async { [weak self] in
+            self?.viewModel.populateDOM()
+        }
     }
     
     func showError(text: String)

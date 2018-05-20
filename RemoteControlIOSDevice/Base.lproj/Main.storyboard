@@ -756,6 +756,7 @@
                     <connections>
                         <outlet property="screenShotImageView" destination="aeZ-bw-PCV" id="0cf-Gp-E3B"/>
                         <outlet property="screenshotImageView" destination="aeZ-bw-PCV" id="rAP-Yf-BzI"/>
+                        <outlet property="selectedElementHighlightView" destination="Uoh-L2-OLi" id="2V2-Tl-0AY"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

@@ -8,6 +8,12 @@
 
 import Foundation
 
+enum AppiumPlatform
+{
+    case AppiumiOSPlatform
+    case AppiumAndroidPlatform
+}
+
 class RemoteControlModel
 {
     static let sharedInstance = RemoteControlModel()

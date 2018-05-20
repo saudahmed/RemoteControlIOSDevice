@@ -141,7 +141,7 @@
 	<key>Inspector Uses CodeMaker Boilerplate</key>
 	<true/>
 	<key>Inspector Uses XPath Only</key>
-	<false/>
+	<true/>
 	<key>iOS App Path</key>
 	<string>/Users/saudahmed/Desktop/Zizzle/IntegrationApp.app</string>
 	<key>iOS Authorized</key>

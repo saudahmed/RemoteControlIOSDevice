@@ -15,10 +15,10 @@ class ScreenShotImageView: NSImageView
     
     required init?(coder aDecoder: NSCoder)
     {
-       super.init(coder: aDecoder)
+        super.init(coder: aDecoder)
         
-       originalImage = nil
-       viewController = nil
+        originalImage = nil
+        viewController = nil
     }
     
     var scalar : CGFloat
@@ -47,6 +47,7 @@ class ScreenShotImageView: NSImageView
     func setImage(newImage: NSImage)
     {
         self.originalImage = newImage
+        
         self.setUpScreenshotView(newImage: newImage)
     }
     
@@ -54,60 +55,63 @@ class ScreenShotImageView: NSImageView
     {
         if let newImage = newImage
         {
-            super.image = self.rotateImage(image: newImage, byAngle: self.rotation)
-            
-            self.scalarMultiplier = 1.0
-            
-            // check for retina devices
-            if (self.image?.size.width == 640 && self.image?.size.height == 960)
-            {
-                // portrait 3.5" iphone with retina display
-                self.scalarMultiplier = 2.0
-            }
-            else if (self.image?.size.width == 960 && self.image?.size.height == 640)
-            {
-                // landscape 3.5" iphone with retina display
-                self.scalarMultiplier = 2.0
-            }
-            else if (self.image?.size.width == 640 && self.image?.size.height == 1136)
-            {
-                // portrait 4" iphone with retina display
-                self.scalarMultiplier = 2.0
-            }
-            else if (self.image?.size.width == 1136 && self.image?.size.height == 640)
-            {
-                // landscape 4" iphone with retina display
-                self.scalarMultiplier = 2.0
-            }
-            else if (self.image?.size.width == 750 && self.image?.size.height == 1334)
-            {
-                // portrait iphone 6
-                self.scalarMultiplier = 2.0
-            }
-            else if (self.image?.size.width == 1334 && self.image?.size.height == 750)
-            {
-                // landscape iphone 6
-                self.scalarMultiplier = 2.0
-            }
-            else if (self.image?.size.width == 1242 && self.image?.size.height == 2208)
-            {
-                // portrait iphone 6 plus
-                self.scalarMultiplier = 3.0
-            }
-            else if (self.image?.size.width == 2208 && self.image?.size.height == 1242)
-            {
-                // landscape iphone 6 plus
-                self.scalarMultiplier = 3.0
-            }
-            else if (self.image?.size.width == 1536 && self.image?.size.height == 2048)
-            {
-                // portrait ipad with retina display
-                self.scalarMultiplier = 2.0
-            }
-            else if (self.image?.size.width == 2048 && self.image?.size.height == 1536)
-            {
-                // landscape ipad with retina display
-                self.scalarMultiplier = 2.0
+            DispatchQueue.main.async {
+                super.image = self.rotateImage(image: newImage, byAngle: self.rotation)
+                
+                
+                self.scalarMultiplier = 1.0
+                
+                // check for retina devices
+                if (self.image?.size.width == 640 && self.image?.size.height == 960)
+                {
+                    // portrait 3.5" iphone with retina display
+                    self.scalarMultiplier = 2.0
+                }
+                else if (self.image?.size.width == 960 && self.image?.size.height == 640)
+                {
+                    // landscape 3.5" iphone with retina display
+                    self.scalarMultiplier = 2.0
+                }
+                else if (self.image?.size.width == 640 && self.image?.size.height == 1136)
+                {
+                    // portrait 4" iphone with retina display
+                    self.scalarMultiplier = 2.0
+                }
+                else if (self.image?.size.width == 1136 && self.image?.size.height == 640)
+                {
+                    // landscape 4" iphone with retina display
+                    self.scalarMultiplier = 2.0
+                }
+                else if (self.image?.size.width == 750 && self.image?.size.height == 1334)
+                {
+                    // portrait iphone 6
+                    self.scalarMultiplier = 2.0
+                }
+                else if (self.image?.size.width == 1334 && self.image?.size.height == 750)
+                {
+                    // landscape iphone 6
+                    self.scalarMultiplier = 2.0
+                }
+                else if (self.image?.size.width == 1242 && self.image?.size.height == 2208)
+                {
+                    // portrait iphone 6 plus
+                    self.scalarMultiplier = 3.0
+                }
+                else if (self.image?.size.width == 2208 && self.image?.size.height == 1242)
+                {
+                    // landscape iphone 6 plus
+                    self.scalarMultiplier = 3.0
+                }
+                else if (self.image?.size.width == 1536 && self.image?.size.height == 2048)
+                {
+                    // portrait ipad with retina display
+                    self.scalarMultiplier = 2.0
+                }
+                else if (self.image?.size.width == 2048 && self.image?.size.height == 1536)
+                {
+                    // landscape ipad with retina display
+                    self.scalarMultiplier = 2.0
+                }
             }
         }
     }
@@ -224,7 +228,21 @@ class ScreenShotImageView: NSImageView
         
         viewController?.viewModel.handleClickAt(windowPoint: point, WithSeleniumPoint: self.convertWindowPointToSeleniumPoint(pointInWindow: point))
         
+        self.tap()
+        
         self.setNeedsDisplay()
+    }
+    
+    //MARK: Perform Tap
+    func tap()
+    {
+        let locator = viewController?.viewModel.locatorForSelectedNode()
+        
+        let action = AppiumCodeMakerActionTap(withLocator: locator!)
+        
+        action.block((viewController?.viewModel.driver)!);
+        
+        viewController?.refresh(NSButton())
     }
     
     //MARK: Rotation
@@ -234,20 +252,20 @@ class ScreenShotImageView: NSImageView
         {
             return image
         }
-    
+        
         let beforeSize = image.size
         let afterSize = degrees == 90 || degrees == 270 ? NSMakeSize(beforeSize.height, beforeSize.width) : beforeSize;
-    
+        
         let newImage = NSImage(size: afterSize)
-    
+        
         let trans = NSAffineTransform()
         trans.rotate(byDegrees: degrees)
-    
+        
         let center = NSAffineTransform()
         center.translateX(by: afterSize.width / 2.0, yBy: afterSize.height / 2.0)
-    
+        
         trans.append(center as AffineTransform)
-    
+        
         newImage.lockFocus()
         
         trans.concat()
@@ -258,7 +276,7 @@ class ScreenShotImageView: NSImageView
         image.draw(at: corner, from: rect, operation: NSCompositingOperation.copy, fraction: 1.0)
         
         newImage.unlockFocus()
-    
+        
         return newImage
     }
 }
